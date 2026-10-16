@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Paste inside <head> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+
+    <style>
+        .ocean-slide {
+            height: 200px;
+            text-align: center;
+            color: White;
+            padding: 50px;
+        }
+
+        .slide-coral {
+            background-color: pink;
+        }
+
+        .slide-animal {
+            background-color: coral;
+        }
+
+        .slide-sunkenship {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#oceanNav" data-offset="60">
+
+    <!--Carousel-->
+
+    <div id="oceanCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#oceanCarousel" data-slide-to="0" class="active">
+            </li>
+            <li data-target="#oceanCarousel" data-slide-to="1">
+            </li>
+            <li data-target="#oceanCarousel" data-slide-to="2">
+            </li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active ocean-slide slide-ocean">Ocean</div>
+            <div class="carousel-item coral-slide slide-coral">Coral</div>
+            <div class="carousel-item animal-slide amimal-desert">Animal</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
