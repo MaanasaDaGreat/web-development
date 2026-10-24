@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Sum(10)">Add</button>
+    <h3 id="add"></h3>
+
+</br>
+
+    <button onclick="Multiply()">Product</button>
+    <h3 id="product"></h3>
+    <h3 id="a"></h3>
+    <h3 id="b"></h3>
+
+
+    <script>
+        function Sum(x,y){
+            if (y === undefined){
+                y=0;
+            }
+            
+            document.getElementById("add").innerHTML = x + y;
+        }
+
+
+
+
+        var a = 5;
+        function Multiply(){
+            var b = 4;
+            document.getElementById("product").innerHTML = a * b;
+        }
+        document.getElementById("a").innerHTML = a;
+        document.getElementById("b").innerHTML = b;
+    </script>
+</body>
+</html>
