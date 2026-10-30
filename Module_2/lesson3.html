@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Methods</h1>
+
+    <script>
+        var str = "bEAutiful"
+
+        document.write(str);
+        document.write("</br>");
+        document.write("</br>");
+        document.write(str.toLowerCase());
+        document.write("</br>");
+        document.write("</br>");
+        document.write(str.toUpperCase());
+        document.write(str.startsWith("B"));
+
+        document.write("</br>");
+
+
+        //Regular Expresion (RegExp)
+
+        var str1 = "I love coding";
+        var word = new RegExp("coding");
+        var result = word.test(str1);
+        document.write(result)
+
+    document.write("</br>");
+    document.write("</br>");
+        // For Loop
+     document.write("</br>");
+      document.write("</br>");
+
+      var fruits = ["mango", "orange","banana", "pineapple", "watermelon", "lime"];
+
+      for (var i=0; i< fruits.length; i++){
+
+        document.write(" " + fruits[i]);
+      }
+    </script>
+</body>
+</html>
