@@ -37,11 +37,38 @@
                     
                         <span class="card-label d-block">School</span>
                         <strong id="school">-</strong>
+
+
+                        
                     </li>
                 </ul>
             </div>
             </div>
         </div>
+        <script>
+
+            // a contact object
+
+            var myContact = { name: "Ann", age: 12, school: "pvv" }
+
+            // dot notation
+
+            var displayName = document.getElementById("name");
+            displayName.textContent = myContact.name;
+
+             // bracket notation
+
+                var displayAge = document.getElementById("age");
+                displayAge.textContent = myContact["age"];
+
+                 var displaySchool = document.getElementById("school");
+                    displaySchool.textContent = myContact["school"];
+
+
+
+
+
+        </script>
     </body>
 </body>
 </html>
