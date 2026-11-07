@@ -6,6 +6,42 @@
     <title>Document</title>
 </head>
 <body>
-    
-</body>
+    <h1>Array</h1>
+    <p>The fruit is <span id="val"></span></p>
+    <p>The fruit is <span id="val"></span></p>
+    <p>The array elements are : <span id="arr"></span></p>
+    <p>The updated array elements are : <span id="arr1"></span></p>
+    <p>The array elements are : <span id="arr2"></span></p>
+
+    <p id="add"></p>
+    <script>
+        //Array
+        var fruits = ["mango", "apple", "orange", "grapes", "pineapple"];
+        document.getElementById("val").innerHTML = fruits[2];
+
+        //join method
+
+        document.getElementById("arr").innerHTML = fruits.join("___")
+
+        //push method
+
+        fruits.push("grapefruit")
+         document.getElementById("arr1").innerHTML = fruits.join("___")
+
+         //pop method
+
+         fruits.pop()
+          document.getElementById("arr2").innerHTML = fruits.join("___")
+
+          function add(x,y){
+            sum = x + y;
+            displaySum(sum)
+          }
+          function displaySum(sum){
+            document.getElementById("add").innerHTML = "The sum is " + sum;
+          }
+
+          add(5,10);
+    </script>
+</body> 
 </html>
