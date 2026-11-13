@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 25px;
+        }
+
+
+        .zone{
+            padding:25px;
+            border: 2px solid black;
+            background-color:lightyellow;
+            color:orange;
+            margin: 10px 200px;
+        }
+        button{
+            padding: 20px;
+            background-color: lightyellow;
+            color:orange;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>My Zoo</h1>
+    <!--Dom - Document Object Model -->
+    <!--"zoo" is the parent node, and zone divs are the child nodes-->
+
+    <div id="zoo">
+        <div class="zone">Zone: 1 <span id="z1"></span></div>
+        <div class="zone">Zone: 2 <span id="z2"></span></div>
+        <div class="zone">Zone: 3 <span id="z3"></span></div>
+        <div class="zone">Zone: 4 <span id="z4"></span></div>
+    </div>
+
+    <button onClick="openZone()">Open the zoo!</button>
+
+    <script>
+        function openZone(){
+
+            document.getElementById("z1").innerHTML = "Lion"
+            document.getElementById("z2").innerHTML = "Tiger"
+            document.getElementById("z3").innerHTML = "Elephant"
+            document.getElementById("z4").innerHTML = "Zebra"
+        }
+    </script>
+</body>
+</html>
