@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: dodgerblue;
+            color:white;
+            padding:20px;
+        }
+        button{
+            padding: 16px 40px;
+            background-color:white;
+            border: none;
+            border-radius: 35px;
+        }
+        div{
+            border: 2px solid black;
+            width: 280px;
+            margin:8px auto;
+            padding: 16px 10px;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Game Profile</h1>
+    <button onClick="showProfile()">Show Profile</button>
+
+    <div>Name: <span id="name"></span></div>
+    <div>Score: <span id="score"></span></div>
+    <div>Top Score: <span id="record"></span></div>
+    <div>Rank: <span id="rank"></span></div>
+    <div>Greetings: <span id="greetings"></span></div>
+    <div>Stars: <span id="stars"></span></div>
+    <div>Bonus Level: <span id="bonus"></span></div>
+    <div>Team Name: <span id="team"></span></div>
+
+
+    <script>
+        function showProfile (){
+            let name = "Alice"
+            let score = 95;
+            let topScore = 100;
+            let greetings = "Leveling up, one game at a time";
+            let bonus = null;
+            let team = "Warriors";
+
+            let rank;
+            let stars;
+            if (score >= 92) {
+                rank = "Diamond";
+                stars = "* * * * *";
+
+
+            }
+
+            else if (score >= 80) {
+                rank = "Gold";
+                stars = "* * * *";
+            }
+
+            else {
+                rank = "Bronze";
+                stars = "* * *";
+            } 
+
+            document.getElementById("name").innerHTML = name;
+            document.getElementById("score").innerHTML = score;
+            document.getElementById("record").innerHTML = topScore;
+            document.getElementById("rank").innerHTML = rank;
+            document.getElementById("greetings").innerHTML = greetings;
+            document.getElementById("stars").innerHTML = stars;
+            document.getElementById("bonus").innerHTML = bonus;
+            document.getElementById("team").innerHTML = team;
+        }
+    </script>
+</body>
+</html>
