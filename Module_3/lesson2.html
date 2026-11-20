@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>My Planet Cards</h1>
+    <button Onclick="showPlanets()">Show Planets</button>
+
+    <div id="cards">
+        <div id="card1"></div>
+        <div id="card2"></div>
+        <div id="card3"></div>
+    </div>
+
+    <script>
+
+        //A class is a blueprint
+        class Planet {
+
+            //a construtor is a special function
+
+            constructor(name, fact){
+                this.name = name;
+                this.fact = fact;
+            }
+
+            //Create a method
+
+            display(){
+                return this.name + ":" + this.fact
+            }
+
+        }
+
+        function showPlanets(){
+
+            //object creation
+
+            let p1 = new Planet("Earth", "Has Life")
+
+            document.getElementById("card1").innerHTML =
+
+            "<div class='card'><div class='planet-name'>"+ p1.name + "</div>" +
+            "<div class='planet-fact'>" + p1.fact + "</div></div>"
+        }
+    </script>
+
+</body>
+</html>
